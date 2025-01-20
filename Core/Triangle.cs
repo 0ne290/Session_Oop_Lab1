@@ -14,7 +14,7 @@ public class Triangle
         Console.WriteLine("Triangle constructor: end.");
     }
 
-    public override string ToString() => $"side 1 = {Side1}, side 2 = {Side2}, side 3 = {Side3}, area = {Area}";
+    public override string ToString() => $"is right = false, side 1 = {Side1}, side 2 = {Side2}, side 3 = {Side3}, area = {Area}";
 
     public virtual double Area
     {

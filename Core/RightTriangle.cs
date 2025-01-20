@@ -13,7 +13,7 @@ public class RightTriangle : Triangle
         Console.WriteLine("Right triangle constructor: end.");
     }
     
-    public override string ToString() => $"hypotenuse = {Hypotenuse}, cathetus 1 = {Cathetus1}, cathetus 2 = {Cathetus2}, area = {Area}";
+    public override string ToString() => $"is right = true, hypotenuse = {Hypotenuse}, cathetus 1 = {Cathetus1}, cathetus 2 = {Cathetus2}, area = {Area}";
 
     public override double Area
     {
