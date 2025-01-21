@@ -4,14 +4,14 @@ public class Triangle
 {
     internal Triangle(double side1, double side2, double side3)
     {
-        Console.WriteLine("Triangle constructor: begin.");
+        Console.WriteLine("\tDEBUG --> Triangle constructor: begin.");
         
         Perimeter = side1 + side2 + side3;
         Side1 = side1;
         Side2 = side2;
         Side3 = side3;
         
-        Console.WriteLine("Triangle constructor: end.");
+        Console.WriteLine("\tDEBUG --> Triangle constructor: end.");
     }
 
     public override string ToString() => $"is right = false, side 1 = {Side1}, side 2 = {Side2}, side 3 = {Side3}, area = {Area}";
@@ -20,7 +20,7 @@ public class Triangle
     {
         get
         {
-            Console.WriteLine("Triangle getter of area: begin.");
+            Console.WriteLine("\tDEBUG --> Triangle getter of area: begin.");
             
             if (_area == null)
             {
@@ -29,7 +29,7 @@ public class Triangle
                                   (semiperimeter - Side3));
             }
             
-            Console.WriteLine("Triangle getter of area: end.");
+            Console.WriteLine("\tDEBUG --> Triangle getter of area: end.");
 
             return _area.Value;
         }

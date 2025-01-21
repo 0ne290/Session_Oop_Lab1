@@ -4,13 +4,13 @@ public class RightTriangle : Triangle
 {
     internal RightTriangle(double hypotenuse, double cathetus1, double cathetus2) : base(hypotenuse, cathetus1, cathetus2)
     {
-        Console.WriteLine("Right triangle constructor: begin.");
+        Console.WriteLine("\tDEBUG --> Right triangle constructor: begin.");
 
         Hypotenuse = hypotenuse;
         Cathetus1 = cathetus1;
         Cathetus2 = cathetus2;
         
-        Console.WriteLine("Right triangle constructor: end.");
+        Console.WriteLine("\tDEBUG --> Right triangle constructor: end.");
     }
     
     public override string ToString() => $"is right = true, hypotenuse = {Hypotenuse}, cathetus 1 = {Cathetus1}, cathetus 2 = {Cathetus2}, area = {Area}";
@@ -19,12 +19,12 @@ public class RightTriangle : Triangle
     {
         get
         {
-            Console.WriteLine("Right triangle getter of area: begin.");
+            Console.WriteLine("\tDEBUG --> Right triangle getter of area: begin.");
             
             if (_area == null)
                 _area = Cathetus1 * Cathetus2 / 2;
             
-            Console.WriteLine("Right triangle getter of area: end.");
+            Console.WriteLine("\tDEBUG --> Right triangle getter of area: end.");
 
             return _area.Value;
         }
